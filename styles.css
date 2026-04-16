@@ -10,57 +10,56 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: system-ui, Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  background: var(--body-bg);
+  background-color: var(--body-bg);
+  padding: 20px;
 }
 
 .book-library {
-  max-width: 360px;
-  margin: 24px auto;
-  background: var(--panel-bg);
-  padding: 16px;
-  border: 1px solid var(--card-border);
-  border-radius: 8px;
+  background-color: var(--panel-bg);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.book-library h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .book {
-  background: #fff;
+  background-color: white;
   border: 1px solid var(--card-border);
-  border-radius: 6px;
-  padding: 12px;
-  margin-bottom: 14px;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
 .book img {
   width: 100%;
-  height: auto;
   display: block;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .title {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .author {
-  font-size: 13px;
   color: var(--author-color);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .price {
-  display: block;
-  width: 100%;
-  background: var(--accent);
+  background-color: var(--accent);
   color: white;
   text-align: center;
-  padding: 6px 0;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 13px;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
 }
