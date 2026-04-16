@@ -1,74 +1,66 @@
 :root {
-	--body-bg: #f7f7f7;
-	--panel-bg: #ffffff;
-	--author-color: #777777;
-	--price-bg: #e0eef7;
-	--accent: #2ecc71;
-	--card-border: #e6e6e6;
+  --body-bg: #f8f8f8;
+  --panel-bg: #ffffff;
+  --author-color: #777777;
+  --accent: #2ecc71;
+  --card-border: #e6e6e6;
 }
 
 * {
-	box-sizing: border-box; 
-	margin: 0;
-	padding: 0;
-	font-family: system-ui, Arial, sans-serif; 
-	color: var(--text)
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, Arial, sans-serif;
 }
+
 body {
-	background: var(--body-bg)
+  background: var(--body-bg);
 }
 
 .book-library {
-	max-width: 360px;
-	margin: 24px auto;
-	background: var(--panel-bg);
-	padding: 16px;
-	border: 1px solid var(--card-border);
-	border-radius: 8px;
+  max-width: 360px;
+  margin: 24px auto;
+  background: var(--panel-bg);
+  padding: 16px;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
 }
 
 .book {
-	background: #fff;
-	border: 1px solid var(--card-border);
-	border-radius: 8px;
-	padding: 12px;
-	margin-bottom: 14px;
+  background: #fff;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 14px;
 }
 
 .book img {
-	width: 100%;
-	height: auto;
-	display: black;
-	border-radius: 4px;
-	object-fit: cover;
-}
-
-.book::after {
-	content: "";
-	display: block;
-	height: 6px;
-	background: 6px;
-	background: var(--accent);
-	border-radius: 3px;
-	margin-top: 8px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
 }
 
 .title {
-	font-size: 16px; 
-	margin-top: 10px;
-	margin-bottom: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 4px;
 }
+
 .author {
-	font-size: 13px; 
-	color: var(--author-color);
-	margin-bottom: 8px
+  font-size: 13px;
+  color: var(--author-color);
+  margin-bottom: 8px;
 }
 
 .price {
-	display: inline-block;
-	background: var(--price-bg);
-	padding: 4px 8px;
-	border-radius: 4px;
-	font-weight: 600;
-	font-size: 13px;
+  display: block;
+  width: 100%;
+  background: var(--accent);
+  color: white;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 13px;
 }
